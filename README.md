@@ -3,15 +3,13 @@
 ---
 	1. Create a springboot application and add Dockerfile to it.
 	2. Create a jar file and run it on cmd using java -jar file_name.jar 
-        3. Open google SDK shell, go to springboot project folder
-        4. gcloud init
-        5. docker build -t gcr.io/project_name/image_name:tag . // to create docker image
-	6. docker push gcr.io/project_name/image_name:tag // push the image to google container registery and check there 
-           is a registry in gcp.
+    3. Open google SDK shell, go to springboot project folder
+    4. gcloud init
+    5. docker build -t gcr.io/project_name/image_name:tag . // to create docker image
+	6. docker push gcr.io/project_name/image_name:tag // push the image to google container registery and check there is a registry in gcp.
 	7. Create a cluster in kuberenetes engine and Click on connect in kuberenetes engine in gcp
-        8. kubectl create deployment image_name(from container registry on gcp) --image=gcr.io/project_name/image_name:tag // create deployment
-	9. kubectl expose deployment image_name --type=LoadBalancer --port 80 --target-port 8080(port_number from springboot project) // expose
-           deployment(create service)
+    8. kubectl create deployment image_name(from container registry on gcp) --image=gcr.io/project_name/image_name:tag // create deployment
+	9. kubectl expose deployment image_name --type=LoadBalancer --port 80 --target-port 8080(port_number from springboot project) // expose deployment(create service)
 	10.check service by command kubectl get service then you will get a window like this
 		NAME             TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)        AGE
 		gke-springboot   LoadBalancer   10.104.6.106   35.238.224.186   80:30135/TCP   70s
