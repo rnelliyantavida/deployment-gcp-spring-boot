@@ -26,10 +26,10 @@
 7. Clone the Spring Boot project from your Github repository
 8. **_mvn spring-boot:run_** // run the spring-boot project on VM
 9. Expose 8080 port on the VM to make the Spring App accessible to the Internet
-	-> Select View Network details
-	-> Go to Firewall Settings(Rules)
-	-> Go to default-http-server and click on the edit button
-	-> Add the 8080 port to the TCP and click the Save button to make the changes
-	-> Verify that Spring Boot App is running 
+ - Select View Network details
+ - Go to Firewall Settings(Rules)
+ - Go to default-http-server and click on the edit button
+ - Add the 8080 port to the TCP and click the Save button to make the changes
+ - Verify that Spring Boot App is running 
 
 
