@@ -11,7 +11,7 @@
 8. **_kubectl create deployment image_name(from container registry on gcp) --image=gcr.io/project_name/image_name:tag_** // create deployment
 9. **_kubectl expose deployment image_name --type=LoadBalancer --port 80 --target-port 8080(port_number from springboot project)_** // expose deployment(create service)
 10. check service by command **_kubectl get service_** 
-11. Copy EXTERNAL-IP and run with http://35.238.224.186:80/hello
+11. Copy EXTERNAL-IP and run like http://35.238.224.186:80/hello
 12. **_kubectl delete service gke-springboot_** // delete the service
 13. **_kubectl delete deployment gke-springboot_** // delete deployment
 
